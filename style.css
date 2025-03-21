@@ -1,0 +1,40 @@
+.content{
+    grid-template-areas: 
+                    "header header header"
+                    "sidebar main main"    
+                    "footer footer footer";
+    
+    grid-template-columns: 200px 1fr 1fr;
+
+    grid-template-rows: 60px auto 40px;
+
+    height: 100vh;
+}
+.header{
+    grid-area: header;
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.sidebar{
+    grid-area: sidebar;
+    background: rgb(47, 66, 47);
+    color: white;
+    text-align: left;
+    padding: 10px;
+}
+.main{
+    grid-area: main;
+    background: rgb(81, 116, 81);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+.footer{
+    grid-area: main;
+    background: rgb(81, 116, 81);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
